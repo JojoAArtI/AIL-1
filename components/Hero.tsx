@@ -22,7 +22,7 @@ export const Hero: React.FC = () => {
               Reliable Logistics Partner
             </p>
             <p className="text-white font-serif italic text-xl md:text-2xl opacity-90">
-              Trusted Shipping • Rajasthan, India
+              Trusted Shipping • India
             </p>
 
             <button
