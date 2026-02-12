@@ -29,7 +29,7 @@ export const OwnerSection: React.FC = () => {
           <div className="relative">
             <div className="absolute inset-0 bg-[#c5a47e] rounded-full translate-x-4 translate-y-4 -z-10 opacity-20"></div>
             <img
-              src="/PIC image.jpeg"
+              src="/owner.jpg"
               alt="Rajan Bansal"
               className="rounded-full w-48 h-48 sm:w-64 sm:h-64 md:w-96 md:h-96 object-cover shadow-2xl transition-all duration-700"
             />
