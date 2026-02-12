@@ -10,10 +10,10 @@ export const OwnerSection: React.FC = () => {
   ];
 
   return (
-    <div id="owner" className="py-24 md:py-32 px-6 md:px-12 bg-[#f4f1e6]">
-      <div className="max-w-7xl mx-auto text-center mb-32">
+    <div id="owner" className="py-16 md:py-32 px-6 md:px-12 bg-[#f4f1e6]">
+      <div className="max-w-7xl mx-auto text-center mb-16 md:mb-32">
         <p className="text-[#c5a47e] font-bold text-[10px] uppercase tracking-[0.3em] mb-6">Why Work With Us</p>
-        <h3 className="font-serif text-5xl md:text-7xl text-[#2d4133] mb-16 leading-tight">A Partner You <br className="md:hidden" />Can Trust</h3>
+        <h3 className="font-serif text-3xl sm:text-5xl md:text-7xl text-[#2d4133] mb-10 md:mb-16 leading-tight">A Partner You <br className="md:hidden" />Can Trust</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
           {values.map((v, i) => (
             <div key={i} className="bracket-card text-left group hover:-translate-y-2 duration-300">
@@ -24,14 +24,14 @@ export const OwnerSection: React.FC = () => {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-16 lg:gap-24 border-t border-gray-200 pt-24">
+      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-10 lg:gap-24 border-t border-gray-200 pt-12 md:pt-24">
         <div className="w-full lg:w-1/2 flex justify-center">
           <div className="relative">
             <div className="absolute inset-0 bg-[#c5a47e] rounded-full translate-x-4 translate-y-4 -z-10 opacity-20"></div>
-            <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=600" 
-              alt="Rajan Bansal" 
-              className="rounded-full w-64 h-64 md:w-96 md:h-96 object-cover shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
+            <img
+              src="/PIC image.jpeg"
+              alt="Rajan Bansal"
+              className="rounded-full w-48 h-48 sm:w-64 sm:h-64 md:w-96 md:h-96 object-cover shadow-2xl transition-all duration-700"
             />
             <div className="absolute -bottom-4 -right-4 bg-[#c5a47e] w-20 h-20 md:w-28 md:h-28 rounded-full flex items-center justify-center text-white font-serif italic text-2xl md:text-4xl shadow-xl">
               R.B
@@ -40,7 +40,7 @@ export const OwnerSection: React.FC = () => {
         </div>
         <div className="w-full lg:w-1/2 space-y-8 text-center lg:text-left">
           <p className="text-[#c5a47e] font-bold text-[10px] uppercase tracking-[0.3em]">From the Owner</p>
-          <h2 className="text-[#2d4133] font-serif text-5xl md:text-6xl leading-[1.1]">Our Promise <br className="hidden lg:block" />To You</h2>
+          <h2 className="text-[#2d4133] font-serif text-3xl sm:text-5xl md:text-6xl leading-[1.1]">Our Promise <br className="hidden lg:block" />To You</h2>
           <p className="text-gray-700 italic text-lg md:text-2xl font-serif leading-relaxed">
             "We treat every box as if it were our own. Our business is built on helping yours succeed. We don't just move items; we help you grow your dream in this great country."
           </p>

@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
         :root {
             --brand-green: #2d4133;
@@ -16,7 +18,7 @@
             --brand-gold: #c5a47e;
             --brand-dark: #1a1a1a;
         }
-        
+
         body {
             font-family: 'Montserrat', sans-serif;
             background-color: var(--brand-cream);
@@ -25,16 +27,31 @@
             overflow-x: hidden;
         }
 
-        h1, h2, h3, h4, .font-serif {
+        h1,
+        h2,
+        h3,
+        h4,
+        .font-serif {
             font-family: 'Cormorant Garamond', serif;
             font-weight: 600;
         }
 
-        .bg-brand-green { background-color: var(--brand-green); }
-        .text-brand-green { color: var(--brand-green); }
-        .text-brand-gold { color: var(--brand-gold); }
-        .border-brand-gold { border-color: var(--brand-gold); }
-        
+        .bg-brand-green {
+            background-color: var(--brand-green);
+        }
+
+        .text-brand-green {
+            color: var(--brand-green);
+        }
+
+        .text-brand-gold {
+            color: var(--brand-gold);
+        }
+
+        .border-brand-gold {
+            border-color: var(--brand-gold);
+        }
+
         /* Bracketed Card Style Refinement */
         .bracket-card {
             position: relative;
@@ -44,8 +61,9 @@
             border-radius: 2px;
             transition: transform 0.3s ease;
         }
-        
-        .bracket-card::before, .bracket-card::after {
+
+        .bracket-card::before,
+        .bracket-card::after {
             content: "";
             position: absolute;
             width: 24px;
@@ -54,13 +72,13 @@
             border-style: solid;
             pointer-events: none;
         }
-        
+
         .bracket-card::before {
             top: -6px;
             left: -6px;
             border-width: 2px 0 0 2px;
         }
-        
+
         .bracket-card::after {
             bottom: -6px;
             right: -6px;
@@ -68,13 +86,11 @@
         }
 
         .striped-bg {
-            background-image: repeating-linear-gradient(
-                90deg,
-                rgba(45, 65, 51, 0.08),
-                rgba(45, 65, 51, 0.08) 1px,
-                transparent 1px,
-                transparent 60px
-            );
+            background-image: repeating-linear-gradient(90deg,
+                    rgba(45, 65, 51, 0.08),
+                    rgba(45, 65, 51, 0.08) 1px,
+                    transparent 1px,
+                    transparent 60px);
         }
 
         .booking-widget {
@@ -89,26 +105,45 @@
 
         /* Smooth reveal animations */
         @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .reveal { animation: fadeInUp 0.8s ease forwards; }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
 
-        ::-webkit-scrollbar { width: 5px; }
-        ::-webkit-scrollbar-track { background: var(--brand-cream); }
-        ::-webkit-scrollbar-thumb { background: var(--brand-green); }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .reveal {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--brand-cream);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--brand-green);
+        }
+
+        @media (max-width: 640px) {
+            .bracket-card {
+                padding: 1.5rem 1.25rem;
+            }
+        }
     </style>
-<script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
-  }
-}
-</script>
+
 </head>
+
 <body>
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
 </body>
+
 </html>

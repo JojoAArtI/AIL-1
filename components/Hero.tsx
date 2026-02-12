@@ -4,17 +4,17 @@ import React from 'react';
 export const Hero: React.FC = () => {
   return (
     <div className="relative">
-      <div className="relative h-screen min-h-[600px] overflow-hidden">
-        <img 
-          src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&q=80&w=2000" 
+      <div className="relative h-screen min-h-[500px] md:min-h-[600px] overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&q=80&w=2000"
           alt="Logistics Fleet"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/60"></div>
-        
+
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
           <div className="reveal">
-            <h1 className="text-white font-serif text-8xl md:text-[12rem] mb-2 tracking-tighter leading-none opacity-90 drop-shadow-2xl">
+            <h1 className="text-white font-serif text-5xl sm:text-7xl md:text-[12rem] mb-2 tracking-tighter leading-none opacity-90 drop-shadow-2xl">
               AIL
             </h1>
             <div className="w-16 h-[2px] bg-[#c5a47e] mx-auto mb-6"></div>
@@ -24,10 +24,10 @@ export const Hero: React.FC = () => {
             <p className="text-white font-serif italic text-xl md:text-2xl opacity-90">
               Trusted Shipping • Rajasthan, India
             </p>
-            
-            <button 
+
+            <button
               onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-              className="mt-12 text-white border border-white/30 px-10 py-4 text-[10px] font-bold tracking-[0.3em] uppercase hover:bg-white hover:text-[#2d4133] transition-all"
+              className="mt-10 md:mt-12 text-white border border-white/30 px-8 py-4 md:px-10 text-[10px] font-bold tracking-[0.3em] uppercase hover:bg-white hover:text-[#2d4133] transition-all active:scale-95"
             >
               Explore Our Work
             </button>
