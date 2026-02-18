@@ -6,7 +6,7 @@ export const Hero: React.FC = () => {
     <div className="relative">
       <div className="relative h-screen min-h-[500px] md:min-h-[600px] overflow-hidden">
         <img
-          src="/images/truck 2.jpeg"
+          src="https://images.pexels.com/photos/1267325/pexels-photo-1267325.jpeg"
           alt="Logistics Fleet"
           className="w-full h-full object-cover"
         />
