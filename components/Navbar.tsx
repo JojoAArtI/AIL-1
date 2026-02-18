@@ -36,11 +36,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
       }`}>
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
         <div className="flex items-center gap-3 cursor-pointer group" onClick={() => scrollTo('home')}>
-          <div className={`w-8 h-8 flex items-center justify-center border transition-colors ${scrolled ? 'border-[#2d4133]' : 'border-white'}`}>
-            <span className={`font-serif text-xl font-bold ${scrolled ? 'text-[#2d4133]' : 'text-white'}`}>A</span>
-          </div>
-          <span className={`font-serif text-xl md:text-2xl font-bold tracking-tight transition-colors ${scrolled ? 'text-[#2d4133]' : 'text-white'
-            }`}>A India Logistics</span>
+          <img src="/logo.png" alt="AIL Logo" className="h-10 md:h-12 w-auto object-contain" />
         </div>
 
         <div className="hidden lg:flex gap-10">
@@ -49,8 +45,8 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
               key={link.id}
               onClick={() => scrollTo(link.id)}
               className={`text-[11px] font-bold uppercase tracking-[0.2em] transition-colors ${activeSection === link.id
-                  ? 'text-[#c5a47e]'
-                  : scrolled ? 'text-gray-600 hover:text-[#2d4133]' : 'text-white/70 hover:text-white'
+                ? 'text-[#c5a47e]'
+                : scrolled ? 'text-gray-600 hover:text-[#2d4133]' : 'text-white/70 hover:text-white'
                 }`}
             >
               {link.name}
@@ -62,8 +58,8 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
           <button
             onClick={() => scrollTo('contact')}
             className={`hidden sm:block px-8 py-3 text-[10px] font-bold tracking-[0.2em] transition-all border ${scrolled
-                ? 'bg-[#2d4133] border-[#2d4133] text-white hover:bg-transparent hover:text-[#2d4133]'
-                : 'bg-white border-white text-[#2d4133] hover:bg-transparent hover:text-white'
+              ? 'bg-[#2d4133] border-[#2d4133] text-white hover:bg-transparent hover:text-[#2d4133]'
+              : 'bg-white border-white text-[#2d4133] hover:bg-transparent hover:text-white'
               }`}
           >
             SHIP NOW
