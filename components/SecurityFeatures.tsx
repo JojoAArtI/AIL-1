@@ -20,7 +20,7 @@ export const SecurityFeatures: React.FC = () => {
                     </div>
                     <div className="lg:w-1/2">
                         <img
-                            src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1200"
+                            src="/images/garage.jpeg"
                             alt="Secure Warehouse"
                             className="w-full h-auto rounded-sm shadow-xl"
                         />
@@ -29,7 +29,7 @@ export const SecurityFeatures: React.FC = () => {
             </section>
 
             {/* Unmatched Security Parallax/Image Section */}
-            <section className="relative py-24 md:py-40 bg-fixed bg-cover bg-center" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=2000")' }}>
+            <section className="relative py-24 md:py-40 bg-fixed bg-cover bg-center" style={{ backgroundImage: 'url("/images/truck 4.jpeg")' }}>
                 <div className="absolute inset-0 bg-black/40"></div>
                 <div className="relative z-10 max-w-7xl mx-auto px-6 text-white">
                     <h2 className="font-serif text-3xl sm:text-5xl md:text-7xl mb-6 max-w-3xl leading-tight">
@@ -74,7 +74,7 @@ export const SecurityFeatures: React.FC = () => {
                     </div>
                     <div className="lg:w-1/2">
                         <img
-                            src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&q=80&w=1000"
+                            src="/images/truck sideway.jpeg"
                             alt="Container"
                             className="w-full h-auto rounded-sm shadow-2xl skew-y-3 transform hover:skew-y-0 transition-transform duration-700"
                         />

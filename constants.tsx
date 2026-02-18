@@ -6,38 +6,38 @@ export const SERVICES: ServiceItem[] = [
     id: '1',
     title: 'Trucking Services',
     description: 'We move your goods safely across India. We focus on getting your items delivered on time, every time.',
-    imageUrl: 'https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&q=80&w=800'
+    imageUrl: '/images/truck 2.jpeg'
   },
   {
     id: '2',
     title: 'Storage & Warehousing',
     description: 'Safe and clean places to store your products. We help you manage your stock so you can focus on your business.',
-    imageUrl: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800'
+    imageUrl: '/images/garage 2.jpeg'
   },
   {
     id: '3',
     title: 'Supply Chain Help',
     description: 'We help you plan the best way to move your materials from one place to another while saving you money.',
-    imageUrl: 'https://images.unsplash.com/photo-1620455805821-74296dc4d4fe?auto=format&fit=crop&q=80&w=800'
+    imageUrl: '/images/truck 4.jpeg'
   },
   {
     id: '4',
     title: 'Factory Logistics',
     description: 'We help move materials inside your factory or plant to keep your production running smoothly.',
-    imageUrl: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&q=80&w=800'
+    imageUrl: '/images/truck sideway.jpeg'
   },
   {
     id: '5',
     title: 'Business Delivery',
     // Using double quotes to safely include single quote in "don't"
     description: "Daily delivery services for local businesses. We handle the small details so you don't have to.",
-    imageUrl: 'https://images.unsplash.com/photo-1566576721346-d4a3b4eaad5b?auto=format&fit=crop&q=80&w=800'
+    imageUrl: '/images/truck 3.jpeg'
   },
   {
     id: '6',
     title: 'Packing & Moving',
     description: 'Extra help with packing, labeling, and loading your boxes to make sure they are safe for travel.',
-    imageUrl: 'https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&q=80&w=800'
+    imageUrl: '/images/congrats.jpeg'
   }
 ];
 

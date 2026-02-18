@@ -72,7 +72,7 @@ const FleetShowcase: React.FC = () => (
         </div>
         <div className="hidden lg:block lg:w-1/2">
           <img
-            src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&q=80&w=1200"
+            src="/images/truck 3.jpeg"
             alt="Fleet View"
             className="w-full h-full object-cover rounded-sm shadow-2xl"
           />
