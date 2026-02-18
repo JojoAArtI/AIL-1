@@ -34,6 +34,31 @@ export const Hero: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Tracking Form Overlay */}
+      <div className="absolute bottom-10 left-0 right-0 z-20 px-6 hidden md:block">
+        <div className="max-w-5xl mx-auto bg-green-700/90 backdrop-blur-sm p-8 rounded-sm shadow-2xl border border-white/10">
+          <div className="grid grid-cols-4 gap-6 items-end">
+            <div className="col-span-1">
+              <label className="text-[10px] text-white/70 tracking-widest uppercase font-bold block mb-2">Service Type</label>
+              <select className="w-full bg-transparent border-b border-white/30 text-white py-2 outline-none text-sm font-serif">
+                <option className="text-black">Ocean Freight</option>
+                <option className="text-black">Air Freight</option>
+                <option className="text-black">Land Transport</option>
+              </select>
+            </div>
+            <div className="col-span-2">
+              <label className="text-[10px] text-white/70 tracking-widest uppercase font-bold block mb-2">Tracking Number</label>
+              <input type="text" placeholder="Enter your tracking ID" className="w-full bg-transparent border-b border-white/30 text-white py-2 outline-none placeholder:text-white/30 text-sm" />
+            </div>
+            <div className="col-span-1">
+              <button className="w-full bg-[#c5a47e] text-[#2d4133] font-bold uppercase tracking-[0.2em] text-[10px] py-3 hover:bg-white transition-colors">
+                Track Cargo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

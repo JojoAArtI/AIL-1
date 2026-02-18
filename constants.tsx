@@ -56,10 +56,33 @@ export const PROCESS_STEPS = [
 ];
 
 export const STATS = [
-  { label: 'Years of Experience', value: '10+' },
-  { label: 'Cities Covered', value: '50+' },
-  { label: 'Happy Clients', value: '5k+' },
-  { label: 'Tons Moved', value: '10k+' }
+  { label: 'Happy Clients', value: '1703' },
+  { label: 'Total Projects', value: '1703' },
+  { label: 'Work Hours', value: '2043' },
+  { label: 'Hard Workers', value: '1533' }
+];
+
+export const CORE_VALUES = [
+  {
+    title: "Reliability & Integrity",
+    description: "We operate with the highest level of professionalism and transparency, ensuring trust and dependability in every service we provide."
+  },
+  {
+    title: "Innovation & Excellence",
+    description: "By leveraging advanced technology and industry expertise, we continuously refine our logistics solutions to meet the evolving demands of global trade."
+  },
+  {
+    title: "Customer-Centric Approach",
+    description: "Our clients are at the core of everything we do. We tailor solutions to fit their specific needs, ensuring efficiency, cost-effectiveness, and seamless execution."
+  },
+  {
+    title: "Security & Compliance",
+    description: "With strict adherence to international logistics standards and regulations, we prioritize the security of cargo at every stage of the supply chain."
+  },
+  {
+    title: "Sustainability & Responsibility",
+    description: "We are committed to reducing our environmental footprint by integrating sustainable practices in our operations, from energy-efficient transport to eco-friendly warehousing solutions."
+  }
 ];
 
 export const TESTIMONIALS: Testimonial[] = [

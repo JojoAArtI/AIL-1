@@ -8,6 +8,7 @@ import { OwnerSection } from './components/OwnerSection';
 import { Testimonials } from './components/Testimonials';
 import { Branches } from './components/Branches';
 import { Footer } from './components/Footer';
+import { SecurityFeatures } from './components/SecurityFeatures';
 import { Chatbot } from './components/Chatbot';
 import { PROCESS_STEPS, STATS, FLEET_DETAILS } from './constants';
 
@@ -195,6 +196,8 @@ const App: React.FC = () => {
         </section>
 
         <StatsSection />
+
+        <SecurityFeatures />
 
         <section id="owner">
           <OwnerSection />
