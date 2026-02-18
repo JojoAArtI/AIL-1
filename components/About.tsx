@@ -3,22 +3,22 @@ import React from 'react';
 
 export const About: React.FC = () => {
   return (
-    <div id="about" className="py-16 md:py-32 px-6 md:px-12 bg-white">
+    <div id="about" className="py-16 md:py-32 px-6 md:px-12 bg-[#f4f1e6]">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-24 items-start mb-16 md:mb-24">
           <div className="lg:w-1/3 w-full">
             <div className="flex items-center gap-4 mb-6">
               <h2 className="text-[#2d4133] font-serif text-4xl sm:text-5xl md:text-6xl font-bold">
-                COREX <br /> <span className="font-light">Transport Group</span>
+                AIL <br /> <span className="font-light">Logistics Group</span>
               </h2>
             </div>
-            <h3 className="text-[#2d4133] font-serif text-2xl md:text-4xl mb-4 leading-tight">Delivering Excellence, <br /> Connecting the World</h3>
+            <h3 className="text-[#2d4133] font-serif text-2xl md:text-4xl mb-4 leading-tight">Delivering Excellence, <br /> Connecting India</h3>
             <div className="w-20 h-1 bg-[#2d4133] mt-4"></div>
           </div>
 
           <div className="lg:w-2/3 w-full space-y-8">
             <p className="text-gray-600 leading-relaxed text-sm md:text-base">
-              At Corex Transport Group, we are redefining the logistics landscape with precision, efficiency, and innovation. As a trusted partner in global trade, we provide end-to-end logistics solutions that ensure seamless movement of goods across borders. With a strong presence in ocean freight, air freight, land transport, and warehousing, we empower businesses with reliable, scalable, and cost-effective supply chain solutions.
+              At A India Logistics (AIL), we are redefining the logistics landscape with precision, efficiency, and innovation. As a trusted partner in domestic and global trade, we provide end-to-end logistics solutions that ensure seamless movement of goods. With a strong presence in land transport and warehousing, we empower businesses with reliable, scalable, and cost-effective supply chain solutions.
             </p>
 
             <div className="space-y-6">
@@ -76,7 +76,7 @@ export const About: React.FC = () => {
           </div>
 
           <p className="text-center text-sm font-bold text-[#2d4133] mt-12 uppercase tracking-widest">
-            Corex Transport Group – Moving the World, Delivering Excellence.
+            A India Logistics – Moving the Nation, Delivering Excellence.
           </p>
         </div>
       </div>

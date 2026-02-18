@@ -7,7 +7,7 @@ export const SecurityFeatures: React.FC = () => {
             <section className="py-16 md:py-32 bg-white px-6">
                 <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
                     <div className="lg:w-1/2">
-                        <h2 className="text-[#2d4133] font-serif text-3xl sm:text-5xl md:text-6xl mb-6">Secure warehouse for your CARGO!!!</h2>
+                        <h2 className="text-[#2d4133] font-serif text-3xl sm:text-5xl md:text-6xl mb-6">Secure Warehouse Solutions</h2>
                         <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-8">
                             We provide secure warehousing solutions for your cargo, ensuring safety and integrity throughout the storage period. Our facilities are equipped with state-of-the-art surveillance and tracking systems to give you peace of mind.
                         </p>
@@ -15,7 +15,7 @@ export const SecurityFeatures: React.FC = () => {
                             <div className="w-12 h-12 rounded-full bg-[#2d4133] flex items-center justify-center text-white font-bold text-xl">
                                 ✓
                             </div>
-                            <span className="text-[#2d4133] font-serif text-xl">Valid Certified</span>
+                            <span className="text-[#2d4133] font-serif text-xl">Certified & Secured</span>
                         </div>
                     </div>
                     <div className="lg:w-1/2">
@@ -39,26 +39,26 @@ export const SecurityFeatures: React.FC = () => {
             </section>
 
             {/* Cargo Tracking & Safety Points */}
-            <section className="py-16 md:py-32 bg-[#1a1c1a] text-white px-6">
+            <section className="py-16 md:py-32 bg-[#2d4133] text-white px-6">
                 <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-24 items-center">
                     <div className="lg:w-1/2">
                         <h3 className="font-serif text-3xl md:text-4xl mb-6">Cargo Tracker: Safe, Secure, and Efficient</h3>
                         <div className="space-y-6">
                             <div className="flex gap-4">
                                 <span className="text-[#c5a47e] text-2xl">•</span>
-                                <p className="text-gray-400 text-sm leading-relaxed">
+                                <p className="text-[#f4f1e6]/80 text-sm leading-relaxed">
                                     Real-time tracking systems allow you to monitor your shipments 24/7, providing transparency and reliability.
                                 </p>
                             </div>
                             <div className="flex gap-4">
                                 <span className="text-[#c5a47e] text-2xl">•</span>
-                                <p className="text-gray-400 text-sm leading-relaxed">
+                                <p className="text-[#f4f1e6]/80 text-sm leading-relaxed">
                                     Advanced security protocols ensure that your cargo remains safe from theft and damage during transit and storage.
                                 </p>
                             </div>
                             <div className="flex gap-4">
                                 <span className="text-[#c5a47e] text-2xl">•</span>
-                                <p className="text-gray-400 text-sm leading-relaxed">
+                                <p className="text-[#f4f1e6]/80 text-sm leading-relaxed">
                                     Our experienced team handles every shipment with care, ensuring efficient and timely delivery to your destination.
                                 </p>
                             </div>
