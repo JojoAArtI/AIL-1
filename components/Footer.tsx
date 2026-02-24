@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
   return (
@@ -22,13 +23,22 @@ export const Footer: React.FC = () => {
             <div className="text-[120px] font-serif text-[#2d4133]/5 leading-none select-none hidden lg:block">AIL</div>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-2 gap-12 lg:gap-24">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-24">
+            <div>
+              <h4 className="text-[#2d4133] font-bold text-[10px] uppercase tracking-widest mb-6">Quick Links</h4>
+              <ul className="space-y-4 text-[10px] font-bold text-gray-400 uppercase tracking-widest">
+                <li><Link to="/" className="hover:text-[#c5a47e] transition-colors">Home</Link></li>
+                <li><Link to="/about" className="hover:text-[#c5a47e] transition-colors">About</Link></li>
+                <li><Link to="/services" className="hover:text-[#c5a47e] transition-colors">Services</Link></li>
+                <li><Link to="/contact" className="hover:text-[#c5a47e] transition-colors">Contact</Link></li>
+              </ul>
+            </div>
             <div>
               <h4 className="text-[#2d4133] font-bold text-[10px] uppercase tracking-widest mb-6">Call Us</h4>
               <ul className="space-y-4 text-xs font-semibold text-gray-600">
                 <li>
                   <p className="text-gray-400 text-[9px] uppercase tracking-widest mb-1">Phone Number</p>
-                  +91 95357 79215
+                  +91 93525 35257
                 </li>
                 <li>
                   <p className="text-gray-400 text-[9px] uppercase tracking-widest mb-1">Email Address</p>
@@ -41,10 +51,8 @@ export const Footer: React.FC = () => {
               <ul className="space-y-4 text-xs font-semibold text-gray-600">
                 <li>
                   <p className="text-gray-400 text-[9px] uppercase tracking-widest mb-1">Office Location</p>
-                  1st Floor No.258/1<br />
-                  Basaveshwara Layout,<br />
-                  Bidadi Ramanagara - 562109<br />
-                  Karnataka
+                  Jaipur, Rajasthan,<br />
+                  India
                 </li>
               </ul>
             </div>

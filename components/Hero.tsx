@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Hero: React.FC = () => {
   return (
@@ -25,12 +26,12 @@ export const Hero: React.FC = () => {
               Trusted Shipping • India
             </p>
 
-            <button
-              onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-              className="mt-10 md:mt-12 text-white border border-white/30 px-8 py-4 md:px-10 text-[10px] font-bold tracking-[0.3em] uppercase hover:bg-white hover:text-[#2d4133] transition-all active:scale-95"
+            <Link
+              to="/about"
+              className="mt-10 md:mt-12 inline-block text-white border border-white/30 px-8 py-4 md:px-10 text-[10px] font-bold tracking-[0.3em] uppercase hover:bg-white hover:text-[#2d4133] transition-all active:scale-95"
             >
               Explore Our Work
-            </button>
+            </Link>
           </div>
         </div>
       </div>
