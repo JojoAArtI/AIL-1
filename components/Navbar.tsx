@@ -81,22 +81,49 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
       </div>
 
       {/* Mobile Menu Full Screen Overlay */}
-      <div className={`fixed inset-0 mobile-nav-overlay lg:hidden transition-transform duration-500 flex flex-col items-center justify-center gap-8 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-        {navLinks.map((link) => (
-          <Link
-            key={link.path}
-            to={link.path}
-            className="text-white font-serif text-4xl hover:text-[#c5a47e] transition-colors"
-          >
-            {link.name}
-          </Link>
-        ))}
-        <Link
-          to="/contact"
-          className="mt-8 border border-[#c5a47e] text-[#c5a47e] px-12 py-4 text-xs font-bold tracking-widest"
-        >
-          CONTACT US
-        </Link>
+      <div className={`fixed inset-0 mobile-nav-overlay lg:hidden transition-transform duration-700 ease-[cubic-bezier(0.16, 1, 0.3, 1)] ${isOpen ? 'translate-x-0 isOpen' : 'translate-x-full'}`}>
+        <div className="h-full w-full flex flex-col p-10 pt-32">
+          {/* Faded Background Logo */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[20vw] font-serif text-white/5 pointer-events-none select-none">
+            AIL
+          </div>
+
+          <div className="flex flex-col gap-8 mb-16">
+            <p className="text-[#c5a47e] font-bold text-[10px] uppercase tracking-[0.4em] mb-2 stagger-item delay-100">Menu</p>
+            {navLinks.map((link, i) => (
+              <Link
+                key={link.path}
+                to={link.path}
+                className="text-white font-serif text-5xl hover:text-[#c5a47e] transition-colors stagger-item"
+                style={{ transitionDelay: `${(i + 2) * 100}ms` }}
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+
+          <div className="mt-auto grid grid-cols-1 md:grid-cols-2 gap-12 border-t border-white/10 pt-12">
+            <div className="stagger-item delay-600">
+              <p className="text-[#c5a47e] font-bold text-[10px] uppercase tracking-[0.4em] mb-4">Contact us</p>
+              <a href="tel:+919352535257" className="text-white text-xl block mb-2">+91 93525 35257</a>
+              <p className="text-white/50 text-xs">aindialogistics@gmail.com</p>
+            </div>
+
+            <div className="stagger-item delay-700">
+              <p className="text-[#c5a47e] font-bold text-[10px] uppercase tracking-[0.4em] mb-4">Find us</p>
+              <p className="text-white/70 text-sm leading-relaxed">
+                Jaipur, Rajasthan, India<br />
+                Mon — Sat: 9:00 AM - 8:00 PM
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-12 flex gap-6 stagger-item delay-700 pt-8">
+            <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white text-sm hover:bg-[#c5a47e] hover:border-[#c5a47e] transition-all">f</div>
+            <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white text-sm hover:bg-[#c5a47e] hover:border-[#c5a47e] transition-all">in</div>
+            <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white text-sm hover:bg-[#c5a47e] hover:border-[#c5a47e] transition-all">ig</div>
+          </div>
+        </div>
       </div>
     </nav>
   );
