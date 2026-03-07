@@ -46,7 +46,9 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
   };
 
   // Define which pages have a dark background at the top (where transparent/white text works)
-  const isDarkHeaderPage = location.pathname === '/';
+  const isDarkHeaderPage = location.pathname === '/' ||
+    location.pathname === '/contact' ||
+    (location.pathname.startsWith('/services/') && location.pathname !== '/services');
 
   // Should we force the solid background/dark text appearance?
   const shouldBeSolid = scrolled || !isDarkHeaderPage;

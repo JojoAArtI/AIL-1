@@ -33,7 +33,7 @@ const LeadForm: React.FC = () => (
 
 export const ContactPage: React.FC = () => {
     return (
-        <div className="pt-20">
+        <div>
             <LeadForm />
             <section className="py-16 md:py-24 bg-[#f4f1e6] px-6">
                 <div className="max-w-7xl mx-auto text-center">

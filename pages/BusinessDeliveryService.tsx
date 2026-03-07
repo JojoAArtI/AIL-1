@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const BusinessDeliveryService: React.FC = () => {
     return (
-        <div className="pt-20 min-h-screen bg-white">
+        <div className="min-h-screen bg-white">
             {/* Hero Section */}
             <section className="py-16 md:py-24 bg-[#345e37] text-white px-6">
                 <div className="max-w-7xl mx-auto">
