@@ -97,15 +97,6 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
         </div>
 
         <div className="flex items-center gap-6">
-          <Link
-            to="/contact"
-            className={`hidden sm:block px-8 py-3 text-[10px] font-bold tracking-[0.2em] transition-all border ${shouldBeSolid
-              ? 'bg-[#f39223] border-[#f39223] text-white hover:bg-transparent hover:text-[#f39223]'
-              : 'bg-white border-white text-[#f39223] hover:bg-transparent hover:text-white'
-              }`}
-          >
-            SHIP NOW
-          </Link>
           <button
             className={`${shouldBeSolid ? 'text-[#f39223]' : 'text-white'} lg:hidden p-2 active:scale-95 transition-transform`}
             onClick={() => setIsOpen(!isOpen)}
