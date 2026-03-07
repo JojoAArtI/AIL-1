@@ -4,6 +4,7 @@ export interface ServiceItem {
   title: string;
   description: string;
   imageUrl: string;
+  path: string;
 }
 
 export interface Testimonial {

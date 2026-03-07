@@ -6,38 +6,44 @@ export const SERVICES: ServiceItem[] = [
     id: '1',
     title: 'Trucking Services',
     description: 'We move your goods safely across India. We focus on getting your items delivered on time, every time.',
-    imageUrl: '/images/truck 2.jpeg'
+    imageUrl: '/images/truck 2.jpeg',
+    path: '/services/trucking'
   },
   {
     id: '2',
     title: 'Storage & Warehousing',
     description: 'Safe and clean places to store your products. We help you manage your stock so you can focus on your business.',
-    imageUrl: '/images/garage 2.jpeg'
+    imageUrl: '/images/garage 2.jpeg',
+    path: '/services/warehousing'
   },
   {
     id: '3',
     title: 'Supply Chain Help',
     description: 'We help you plan the best way to move your materials from one place to another while saving you money.',
-    imageUrl: '/images/truck 4.jpeg'
+    imageUrl: '/images/truck 4.jpeg',
+    path: '/services/supply-chain'
   },
   {
     id: '4',
     title: 'Factory Logistics',
     description: 'We help move materials inside your factory or plant to keep your production running smoothly.',
-    imageUrl: '/images/truck sideway.jpeg'
+    imageUrl: '/images/truck sideway.jpeg',
+    path: '/services/factory-logistics'
   },
   {
     id: '5',
     title: 'Business Delivery',
     // Using double quotes to safely include single quote in "don't"
     description: "Daily delivery services for local businesses. We handle the small details so you don't have to.",
-    imageUrl: '/images/truck 3.jpeg'
+    imageUrl: '/images/truck 3.jpeg',
+    path: '/services/business-delivery'
   },
   {
     id: '6',
     title: 'Packing & Moving',
     description: 'Extra help with packing, labeling, and loading your boxes to make sure they are safe for travel.',
-    imageUrl: '/images/congrats.jpeg'
+    imageUrl: '/images/congrats.jpeg',
+    path: '/services/packing-moving'
   }
 ];
 

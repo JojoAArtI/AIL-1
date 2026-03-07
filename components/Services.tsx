@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { SERVICES } from '../constants';
 
 export const Services: React.FC = () => {
@@ -14,7 +15,7 @@ export const Services: React.FC = () => {
         {/* Desktop: tall vertical cards */}
         <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16">
           {SERVICES.map((service, idx) => (
-            <div key={service.id} className="group cursor-pointer">
+            <Link key={service.id} to={service.path} className="group cursor-pointer">
               <div className="relative aspect-[4/5] overflow-hidden shadow-xl mb-8 border border-gray-100">
                 <img
                   src={service.imageUrl}
@@ -36,14 +37,14 @@ export const Services: React.FC = () => {
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </button>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
         {/* Mobile: compact horizontal cards */}
         <div className="md:hidden grid grid-cols-1 gap-4">
           {SERVICES.map((service, idx) => (
-            <div key={service.id} className="flex gap-4 bg-[#f9f8f4] border border-gray-100 rounded-lg overflow-hidden text-left group cursor-pointer active:scale-[0.98] transition-transform">
+            <Link key={service.id} to={service.path} className="flex gap-4 bg-[#f9f8f4] border border-gray-100 rounded-lg overflow-hidden text-left group cursor-pointer active:scale-[0.98] transition-transform">
               <div className="relative w-24 min-h-[100px] flex-shrink-0 overflow-hidden">
                 <img
                   src={service.imageUrl}
@@ -59,7 +60,7 @@ export const Services: React.FC = () => {
                   {service.description}
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

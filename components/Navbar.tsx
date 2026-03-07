@@ -24,7 +24,18 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
-    { name: 'Services', path: '/services' },
+    {
+      name: 'Services',
+      path: '/services',
+      dropdown: [
+        { name: 'Trucking Services', path: '/services/trucking' },
+        { name: 'Storage & Warehousing', path: '/services/warehousing' },
+        { name: 'Supply Chain Help', path: '/services/supply-chain' },
+        { name: 'Factory Logistics', path: '/services/factory-logistics' },
+        { name: 'Business Delivery', path: '/services/business-delivery' },
+        { name: 'Packing & Moving', path: '/services/packing-moving' },
+      ]
+    },
     { name: 'Locations', path: '/locations' },
   ];
 
@@ -34,8 +45,14 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
     return false;
   };
 
+  // Define which pages have a dark background at the top (where transparent/white text works)
+  const isDarkHeaderPage = location.pathname === '/';
+
+  // Should we force the solid background/dark text appearance?
+  const shouldBeSolid = scrolled || !isDarkHeaderPage;
+
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#f4f1e6]/95 py-3 shadow-sm' : 'bg-transparent py-6'
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${shouldBeSolid ? 'bg-[#f4f1e6]/95 py-3 shadow-sm' : 'bg-transparent py-6'
       }`}>
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-3 cursor-pointer group">
@@ -44,23 +61,43 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
 
         <div className="hidden lg:flex gap-10">
           {navLinks.map((link) => (
-            <Link
-              key={link.path}
-              to={link.path}
-              className={`text-[11px] font-bold uppercase tracking-[0.2em] transition-colors ${isActive(link.path)
-                ? 'text-[#2d3282]'
-                : scrolled ? 'text-gray-600 hover:text-[#f39223]' : 'text-white/70 hover:text-white'
-                }`}
-            >
-              {link.name}
-            </Link>
+            <div key={link.path} className="relative group">
+              <Link
+                to={link.path}
+                className={`text-[11px] font-bold uppercase tracking-[0.2em] transition-colors flex items-center gap-1 py-2 ${isActive(link.path)
+                  ? 'text-[#2d3282]'
+                  : shouldBeSolid ? 'text-gray-600 hover:text-[#f39223]' : 'text-white/70 hover:text-white'
+                  }`}
+              >
+                {link.name}
+                {link.dropdown && (
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="opacity-50 group-hover:rotate-180 transition-transform"><path d="m6 9 6 6 6-6" /></svg>
+                )}
+              </Link>
+
+              {link.dropdown && (
+                <div className="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0">
+                  <div className="bg-white shadow-xl border border-gray-100 min-w-[240px] py-4 rounded-sm">
+                    {link.dropdown.map((subItem) => (
+                      <Link
+                        key={subItem.path}
+                        to={subItem.path}
+                        className="block px-8 py-3 text-[10px] font-bold text-gray-500 uppercase tracking-widest hover:text-[#f39223] hover:bg-[#f4f1e6]/50 transition-all border-l-2 border-transparent hover:border-[#f39223]"
+                      >
+                        {subItem.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
           ))}
         </div>
 
         <div className="flex items-center gap-6">
           <Link
             to="/contact"
-            className={`hidden sm:block px-8 py-3 text-[10px] font-bold tracking-[0.2em] transition-all border ${scrolled
+            className={`hidden sm:block px-8 py-3 text-[10px] font-bold tracking-[0.2em] transition-all border ${shouldBeSolid
               ? 'bg-[#f39223] border-[#f39223] text-white hover:bg-transparent hover:text-[#f39223]'
               : 'bg-white border-white text-[#f39223] hover:bg-transparent hover:text-white'
               }`}
@@ -68,7 +105,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
             SHIP NOW
           </Link>
           <button
-            className={`${scrolled ? 'text-[#f39223]' : 'text-white'} lg:hidden p-2 active:scale-95 transition-transform`}
+            className={`${shouldBeSolid ? 'text-[#f39223]' : 'text-white'} lg:hidden p-2 active:scale-95 transition-transform`}
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? (
@@ -91,14 +128,28 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
           <div className="flex flex-col gap-8 mb-16">
             <p className="text-[#2d3282] font-bold text-[10px] uppercase tracking-[0.4em] mb-2 stagger-item delay-100">Menu</p>
             {navLinks.map((link, i) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className="text-white font-serif text-5xl hover:text-[#2d3282] transition-colors stagger-item"
-                style={{ transitionDelay: `${(i + 2) * 100}ms` }}
-              >
-                {link.name}
-              </Link>
+              <div key={link.path} className="flex flex-col gap-4">
+                <Link
+                  to={link.path}
+                  className="text-white font-serif text-5xl hover:text-[#2d3282] transition-colors stagger-item"
+                  style={{ transitionDelay: `${(i + 2) * 100}ms` }}
+                >
+                  {link.name}
+                </Link>
+                {link.dropdown && (
+                  <div className="flex flex-col gap-3 pl-4 border-l border-white/10 stagger-item" style={{ transitionDelay: `${(i + 2.5) * 100}ms` }}>
+                    {link.dropdown.map((subItem) => (
+                      <Link
+                        key={subItem.path}
+                        to={subItem.path}
+                        className="text-white/40 font-bold text-[10px] uppercase tracking-[0.2em] hover:text-[#f39223] transition-colors"
+                      >
+                        {subItem.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
           </div>
 
