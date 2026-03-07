@@ -8,12 +8,12 @@ export const About: React.FC = () => {
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-24 items-start mb-16 md:mb-24">
           <div className="lg:w-1/3 w-full">
             <div className="flex items-center gap-4 mb-6">
-              <h2 className="text-[#2d4133] font-serif text-4xl sm:text-5xl md:text-6xl font-bold">
+              <h2 className="text-[#f39223] font-serif text-4xl sm:text-5xl md:text-6xl font-bold">
                 AIL <br /> <span className="font-light">Logistics Group</span>
               </h2>
             </div>
-            <h3 className="text-[#2d4133] font-serif text-2xl md:text-4xl mb-4 leading-tight">Delivering Excellence, <br /> Connecting India</h3>
-            <div className="w-20 h-1 bg-[#2d4133] mt-4"></div>
+            <h3 className="text-[#2d3282] font-serif text-2xl md:text-4xl mb-4 leading-tight">Delivering Excellence, <br /> Connecting India</h3>
+            <div className="w-20 h-1 bg-[#345e37] mt-4"></div>
           </div>
 
           <div className="lg:w-2/3 w-full space-y-8">
@@ -23,13 +23,13 @@ export const About: React.FC = () => {
 
             <div className="space-y-6">
               <div>
-                <h4 className="font-serif text-2xl text-[#2d4133] mb-2">Our Mission</h4>
+                <h4 className="font-serif text-2xl text-[#f39223] mb-2">Our Mission</h4>
                 <p className="text-gray-500 text-sm leading-relaxed">
                   To provide world-class logistics solutions that optimize supply chains, enhance efficiency, and drive global connectivity. We are committed to delivering safe, secure, and timely transportation services that empower businesses to thrive in an ever-evolving marketplace.
                 </p>
               </div>
               <div>
-                <h4 className="font-serif text-2xl text-[#2d4133] mb-2">Our Vision</h4>
+                <h4 className="font-serif text-2xl text-[#f39223] mb-2">Our Vision</h4>
                 <p className="text-gray-500 text-sm leading-relaxed">
                   To be the global leader in logistics and supply chain solutions, recognized for innovation, reliability, and a customer-first approach. We aim to set new standards in logistics excellence while fostering sustainable and technology-driven advancements in the industry.
                 </p>
@@ -40,8 +40,8 @@ export const About: React.FC = () => {
 
         <div className="mt-16 md:mt-24">
           <div className="text-center mb-12">
-            <h3 className="text-[#2d4133] font-serif text-3xl md:text-5xl mb-4">Our Core Values</h3>
-            <div className="w-16 h-[2px] bg-[#c5a47e] mx-auto"></div>
+            <h3 className="text-[#2d3282] font-serif text-3xl md:text-5xl mb-4">Our Core Values</h3>
+            <div className="w-16 h-[2px] bg-[#f39223] mx-auto"></div>
           </div>
 
           <div className="space-y-10 md:space-y-12 max-w-4xl mx-auto">
@@ -69,13 +69,13 @@ export const About: React.FC = () => {
               }
             ].map((value, i) => (
               <div key={i} className="group">
-                <h4 className="font-serif text-xl md:text-2xl text-[#2d4133] mb-3 group-hover:text-[#c5a47e] transition-colors">{value.title}</h4>
+                <h4 className="font-serif text-xl md:text-2xl text-[#345e37] mb-3 group-hover:text-[#2d3282] transition-colors">{value.title}</h4>
                 <p className="text-gray-500 text-sm leading-relaxed">{value.description}</p>
               </div>
             ))}
           </div>
 
-          <p className="text-center text-sm font-bold text-[#2d4133] mt-12 uppercase tracking-widest">
+          <p className="text-center text-sm font-bold text-[#f39223] mt-12 uppercase tracking-widest">
             A India Logistics – Moving the Nation, Delivering Excellence.
           </p>
         </div>

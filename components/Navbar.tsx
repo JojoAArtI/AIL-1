@@ -48,8 +48,8 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
               key={link.path}
               to={link.path}
               className={`text-[11px] font-bold uppercase tracking-[0.2em] transition-colors ${isActive(link.path)
-                ? 'text-[#c5a47e]'
-                : scrolled ? 'text-gray-600 hover:text-[#2d4133]' : 'text-white/70 hover:text-white'
+                ? 'text-[#2d3282]'
+                : scrolled ? 'text-gray-600 hover:text-[#f39223]' : 'text-white/70 hover:text-white'
                 }`}
             >
               {link.name}
@@ -61,14 +61,14 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
           <Link
             to="/contact"
             className={`hidden sm:block px-8 py-3 text-[10px] font-bold tracking-[0.2em] transition-all border ${scrolled
-              ? 'bg-[#2d4133] border-[#2d4133] text-white hover:bg-transparent hover:text-[#2d4133]'
-              : 'bg-white border-white text-[#2d4133] hover:bg-transparent hover:text-white'
+              ? 'bg-[#f39223] border-[#f39223] text-white hover:bg-transparent hover:text-[#f39223]'
+              : 'bg-white border-white text-[#f39223] hover:bg-transparent hover:text-white'
               }`}
           >
             SHIP NOW
           </Link>
           <button
-            className={`${scrolled ? 'text-[#2d4133]' : 'text-white'} lg:hidden p-2 active:scale-95 transition-transform`}
+            className={`${scrolled ? 'text-[#f39223]' : 'text-white'} lg:hidden p-2 active:scale-95 transition-transform`}
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? (
@@ -89,12 +89,12 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
           </div>
 
           <div className="flex flex-col gap-8 mb-16">
-            <p className="text-[#c5a47e] font-bold text-[10px] uppercase tracking-[0.4em] mb-2 stagger-item delay-100">Menu</p>
+            <p className="text-[#2d3282] font-bold text-[10px] uppercase tracking-[0.4em] mb-2 stagger-item delay-100">Menu</p>
             {navLinks.map((link, i) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className="text-white font-serif text-5xl hover:text-[#c5a47e] transition-colors stagger-item"
+                className="text-white font-serif text-5xl hover:text-[#2d3282] transition-colors stagger-item"
                 style={{ transitionDelay: `${(i + 2) * 100}ms` }}
               >
                 {link.name}
@@ -104,13 +104,13 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
 
           <div className="mt-auto grid grid-cols-1 md:grid-cols-2 gap-12 border-t border-white/10 pt-12">
             <div className="stagger-item delay-600">
-              <p className="text-[#c5a47e] font-bold text-[10px] uppercase tracking-[0.4em] mb-4">Contact us</p>
+              <p className="text-[#2d3282] font-bold text-[10px] uppercase tracking-[0.4em] mb-4">Contact us</p>
               <a href="tel:+919352535257" className="text-white text-xl block mb-2">+91 93525 35257</a>
               <p className="text-white/50 text-xs">aindialogistics@gmail.com</p>
             </div>
 
             <div className="stagger-item delay-700">
-              <p className="text-[#c5a47e] font-bold text-[10px] uppercase tracking-[0.4em] mb-4">Find us</p>
+              <p className="text-[#2d3282] font-bold text-[10px] uppercase tracking-[0.4em] mb-4">Find us</p>
               <p className="text-white/70 text-sm leading-relaxed">
                 Jaipur, Rajasthan, India<br />
                 Mon — Sat: 9:00 AM - 8:00 PM
@@ -119,9 +119,9 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
           </div>
 
           <div className="mt-12 flex gap-6 stagger-item delay-700 pt-8">
-            <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white text-sm hover:bg-[#c5a47e] hover:border-[#c5a47e] transition-all">f</div>
-            <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white text-sm hover:bg-[#c5a47e] hover:border-[#c5a47e] transition-all">in</div>
-            <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white text-sm hover:bg-[#c5a47e] hover:border-[#c5a47e] transition-all">ig</div>
+            <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white text-sm hover:bg-[#2d3282] hover:border-[#2d3282] transition-all">f</div>
+            <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white text-sm hover:bg-[#2d3282] hover:border-[#2d3282] transition-all">in</div>
+            <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white text-sm hover:bg-[#2d3282] hover:border-[#2d3282] transition-all">ig</div>
           </div>
         </div>
       </div>

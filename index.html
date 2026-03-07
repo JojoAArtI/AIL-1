@@ -13,9 +13,10 @@
         rel="stylesheet">
     <style>
         :root {
-            --brand-green: #2d4133;
+            --brand-orange: #f39223;
+            --brand-blue: #2d3282;
+            --brand-green: #345e37;
             --brand-cream: #f4f1e6;
-            --brand-gold: #c5a47e;
             --brand-dark: #1a1a1a;
         }
 
@@ -36,26 +37,26 @@
             font-weight: 600;
         }
 
-        .bg-brand-green {
-            background-color: var(--brand-green);
+        .bg-brand-orange {
+            background-color: var(--brand-orange);
         }
 
-        .text-brand-green {
-            color: var(--brand-green);
+        .text-brand-orange {
+            color: var(--brand-orange);
         }
 
-        .text-brand-gold {
-            color: var(--brand-gold);
+        .text-brand-blue {
+            color: var(--brand-blue);
         }
 
-        .border-brand-gold {
-            border-color: var(--brand-gold);
+        .border-brand-blue {
+            border-color: var(--brand-blue);
         }
 
         /* Bracketed Card Style Refinement */
         .bracket-card {
             position: relative;
-            background: var(--brand-green);
+            background: var(--brand-orange);
             color: white;
             padding: 2.5rem 2rem;
             border-radius: 2px;
@@ -68,7 +69,7 @@
             position: absolute;
             width: 24px;
             height: 24px;
-            border-color: var(--brand-gold);
+            border-color: var(--brand-blue);
             border-style: solid;
             pointer-events: none;
         }
@@ -87,8 +88,8 @@
 
         .striped-bg {
             background-image: repeating-linear-gradient(90deg,
-                    rgba(45, 65, 51, 0.08),
-                    rgba(45, 65, 51, 0.08) 1px,
+                    rgba(243, 146, 35, 0.08),
+                    rgba(243, 146, 35, 0.08) 1px,
                     transparent 1px,
                     transparent 60px);
         }
@@ -168,7 +169,7 @@
         }
 
         ::-webkit-scrollbar-thumb {
-            background: var(--brand-green);
+            background: var(--brand-orange);
         }
 
         @media (max-width: 640px) {

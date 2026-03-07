@@ -23,7 +23,7 @@ const ScrollToTop = () => {
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen selection:bg-[#c5a47e] selection:text-white">
+    <div className="min-h-screen selection:bg-[#f39223] selection:text-white">
       <ScrollToTop />
       <Navbar />
 

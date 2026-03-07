@@ -18,7 +18,7 @@ export const Hero: React.FC = () => {
             <h1 className="text-white font-serif text-5xl sm:text-7xl md:text-[12rem] mb-2 tracking-tighter leading-none opacity-90 drop-shadow-2xl">
               AIL
             </h1>
-            <div className="w-16 h-[2px] bg-[#c5a47e] mx-auto mb-6"></div>
+            <div className="w-16 h-[2px] bg-[#f39223] mx-auto mb-6"></div>
             <p className="text-white font-medium tracking-[0.5em] text-[10px] md:text-xs uppercase mb-4 opacity-80">
               Reliable Logistics Partner
             </p>
@@ -28,7 +28,7 @@ export const Hero: React.FC = () => {
 
             <Link
               to="/about"
-              className="mt-10 md:mt-12 inline-block text-white border border-white/30 px-8 py-4 md:px-10 text-[10px] font-bold tracking-[0.3em] uppercase hover:bg-white hover:text-[#2d4133] transition-all active:scale-95"
+              className="mt-10 md:mt-12 inline-block text-white border border-white/30 px-8 py-4 md:px-10 text-[10px] font-bold tracking-[0.3em] uppercase hover:bg-white hover:text-[#f39223] transition-all active:scale-95"
             >
               Explore Our Work
             </Link>

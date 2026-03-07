@@ -8,33 +8,33 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start gap-10 md:gap-16 mb-12 md:mb-24">
           <div className="space-y-6 max-w-sm">
-            <h2 className="font-serif text-3xl md:text-4xl text-[#2d4133]">A India Logistics</h2>
+            <h2 className="font-serif text-3xl md:text-4xl text-[#f39223]">A India Logistics</h2>
             <p className="text-gray-500 font-serif italic text-xl leading-relaxed">
               We make shipping big stuff look easy.
             </p>
             <div className="pt-4 flex gap-4">
-              <div className="w-8 h-8 rounded-full bg-[#2d4133] flex items-center justify-center text-[#c5a47e] text-xs">f</div>
-              <div className="w-8 h-8 rounded-full bg-[#2d4133] flex items-center justify-center text-[#c5a47e] text-xs">t</div>
-              <div className="w-8 h-8 rounded-full bg-[#2d4133] flex items-center justify-center text-[#c5a47e] text-xs">in</div>
+              <div className="w-8 h-8 rounded-full bg-[#f39223] flex items-center justify-center text-white text-xs">f</div>
+              <div className="w-8 h-8 rounded-full bg-[#2d3282] flex items-center justify-center text-white text-xs">t</div>
+              <div className="w-8 h-8 rounded-full bg-[#345e37] flex items-center justify-center text-white text-xs">in</div>
             </div>
           </div>
 
           <div className="flex flex-col items-center flex-1">
-            <div className="text-[120px] font-serif text-[#2d4133]/5 leading-none select-none hidden lg:block">AIL</div>
+            <div className="text-[120px] font-serif text-[#f39223]/10 leading-none select-none hidden lg:block">AIL</div>
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-24">
             <div>
-              <h4 className="text-[#2d4133] font-bold text-[10px] uppercase tracking-widest mb-6">Quick Links</h4>
+              <h4 className="text-[#2d3282] font-bold text-[10px] uppercase tracking-widest mb-6">Quick Links</h4>
               <ul className="space-y-4 text-[10px] font-bold text-gray-400 uppercase tracking-widest">
-                <li><Link to="/" className="hover:text-[#c5a47e] transition-colors">Home</Link></li>
-                <li><Link to="/about" className="hover:text-[#c5a47e] transition-colors">About</Link></li>
-                <li><Link to="/services" className="hover:text-[#c5a47e] transition-colors">Services</Link></li>
-                <li><Link to="/contact" className="hover:text-[#c5a47e] transition-colors">Contact</Link></li>
+                <li><Link to="/" className="hover:text-[#f39223] transition-colors">Home</Link></li>
+                <li><Link to="/about" className="hover:text-[#f39223] transition-colors">About</Link></li>
+                <li><Link to="/services" className="hover:text-[#f39223] transition-colors">Services</Link></li>
+                <li><Link to="/contact" className="hover:text-[#f39223] transition-colors">Contact</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="text-[#2d4133] font-bold text-[10px] uppercase tracking-widest mb-6">Call Us</h4>
+              <h4 className="text-[#2d3282] font-bold text-[10px] uppercase tracking-widest mb-6">Call Us</h4>
               <ul className="space-y-4 text-xs font-semibold text-gray-600">
                 <li>
                   <p className="text-gray-400 text-[9px] uppercase tracking-widest mb-1">Phone Number</p>
@@ -47,7 +47,7 @@ export const Footer: React.FC = () => {
               </ul>
             </div>
             <div>
-              <h4 className="text-[#2d4133] font-bold text-[10px] uppercase tracking-widest mb-6">Our Office</h4>
+              <h4 className="text-[#2d3282] font-bold text-[10px] uppercase tracking-widest mb-6">Our Office</h4>
               <ul className="space-y-4 text-xs font-semibold text-gray-600">
                 <li>
                   <p className="text-gray-400 text-[9px] uppercase tracking-widest mb-1">Office Location</p>
